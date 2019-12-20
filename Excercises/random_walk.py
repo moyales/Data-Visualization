@@ -11,27 +11,20 @@ class RandomWalk():
         self.x_val = [0]
         self.y_val = [0]
 
-    def get_step(self):
-        '''
-        Determine which direction and distance for each step, 
-        then calculate the step.
-        '''
-        # Refactored method to de-clutter fill_walk
-        direction = choice([1, -1])
-        dist = choice([0, 1, 2, 3, 4])
-        step = direction * dist
-
-        return step
-
     def fill_walk(self):
         '''Calculate all the points in the walk.'''
 
         # Continue taking steps until the walk reaches the desired length.
         while len(self.x_val) < self.num_points:
             # Decide which direction to go and how far to go in that direction.
-            # Do this for both x and y direction.
-            x_step = self.get_step()
-            y_step = self.get_step()
+            # Doing this for both x and y direction.
+            x_dir = choice([1, -1])
+            x_dist = choice([0, 1, 2, 3, 4])
+            x_step = x_dir * x_dist
+
+            y_dir = choice([1, -1])
+            y_dist = choice([0, 1, 2, 3, 4])
+            y_step = y_dir * y_dist
 
             # Reject moves that go nowhere.
             if x_step == 0 and y_step == 0:
