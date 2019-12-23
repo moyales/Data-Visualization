@@ -14,4 +14,6 @@ Collection of Python examples of matplotlib and Pygal for data visualization (Ad
 * Access data from two common formats, CSV and JSON
 * Use weather data as an example
 * A look into more complex visualizations
+* Parsing CSV and JSON data
+* Pygal world map
 ## Chapter 17: Working with APIs
