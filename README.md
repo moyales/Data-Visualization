@@ -17,3 +17,6 @@ Collection of Python examples of matplotlib and Pygal for data visualization (Ad
 * Parsing CSV and JSON data
 * Pygal world map
 ## Chapter 17: Working with APIs
+* Learn about some basic APIs using the GitHub API
+* Visualize GitHub API data with Pygal
+* Hacker News API
